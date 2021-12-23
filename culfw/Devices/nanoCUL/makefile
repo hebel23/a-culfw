@@ -11,7 +11,7 @@ DESTDIR=culfw-nanoCUL
 #		../../clib/adcw.c                                    \
 #		../../clib/cctemp.c                                  \
 
-SRC = nanoCUL.c                                            \
+SRC = nanoCUL.c                                              \
 		../../clib/cc1100.c                                  \
 		../../clib/cc1101_pllcheck.c                         \
 		../../clib/clock.c                                   \
@@ -39,7 +39,7 @@ SRC = nanoCUL.c                                            \
 		../../clib/rf_moritz.c                               \
 		../../clib/rf_rwe.c                                  \
 		../../clib/somfy_rts.c                               \
-		../../clib/fastrf.c                               \
+		../../clib/fastrf.c                                  \
 		../../clib/rf_zwave.c                                \
 		../../clib/intertechno.c                             \
 		../../clib/kopp-fc.c                                 \
@@ -52,6 +52,7 @@ SRC = nanoCUL.c                                            \
 		../../clib/mbus/3outof6.c                            \
 		../../clib/mbus/mbus_packet.c                        \
 		../../clib/mbus/crc.c                                \
+		../../clib/rf_finesell.c                             \
 
 
 OPT = s
