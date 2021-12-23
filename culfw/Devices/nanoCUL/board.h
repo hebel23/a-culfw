@@ -4,6 +4,8 @@
 #include <avr/io.h>
 #include <stdint.h>
 
+#define nanoCUL868
+
 /* if you have an Arduino with only 8MHz disable the next line */
 #define HAS_16MHZ_CLOCK
 
@@ -119,15 +121,15 @@ extern const uint8_t mark433_pin;
 #endif
 
 #if defined (nanoCUL868)
-#  define HAS_ASKSIN_FUP
-#  define HAS_MORITZ
-#  define HAS_RWE
-#  define HAS_ESA
+#define HAS_FINESELL
+//#  define HAS_ASKSIN_FUP
+//#  define HAS_MORITZ
+//#  define HAS_RWE
+//#  define HAS_ESA
 //#  define HAS_HOERMANN
 //#  define HAS_HOERMANN_SEND
-#  define HAS_HMS
-#  define OFF_LACROSSE_HMS_EMU          // if you like HMS emulation for LaCrosse temp devices
-
+//#  define HAS_HMS
+//#  define OFF_LACROSSE_HMS_EMU          // if you like HMS emulation for LaCrosse temp devices
 //#define HAS_SOMFY_RTS
 //#define HAS_FHT_80b                     // PROGMEM: 1374b, RAM: 90b
 //#define HAS_FHT_8v                    // PROGMEM:  586b  RAM: 23b

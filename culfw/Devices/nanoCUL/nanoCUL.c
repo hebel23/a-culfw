@@ -36,6 +36,9 @@
 #include "fht.h"
 #include "memory.h"
 
+#ifdef HAS_FINESELL
+#include "rf_finesell.h"
+#endif
 #ifdef HAS_ASKSIN
 #include "rf_asksin.h"
 #endif
